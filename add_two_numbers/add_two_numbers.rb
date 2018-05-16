@@ -31,7 +31,7 @@ def add_two_numbers(l1, l2)
     result_array = [head_node.val]      # the test cases want an array so I also create an array
 #                                         in parallel to the List
 
-    until num3 % 10 == 0 && num3 / 10 == 0
+    until num3 == 0
         current_node.next = ListNode.new(num3 % 10)
         current_node = current_node.next
         num3 = num3 / 10
