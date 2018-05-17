@@ -25,11 +25,11 @@ def add_two_numbers(l1, l2)
     num3 = num1 + num2                  # solution that needs to be converted into list/array
     
     head_node = ListNode.new(num3%10)   # specs ask for a head node so I keep track of it while
-#                                         building the rest of the list
+                                        # building the rest of the list
     current_node = head_node 
     num3 = num3 / 10
     result_array = [head_node.val]      # the test cases want an array so I also create an array
-#                                         in parallel to the List
+                                        # in parallel to the List
 
     until num3 == 0
         current_node.next = ListNode.new(num3 % 10)
@@ -41,7 +41,7 @@ def add_two_numbers(l1, l2)
     result_array                        # returns an array to pass test casses on leetcode
 
 #   head_node                             The specs asked for the head node, 
-#                                         but the test cases test for an array
+                                        # but the test cases test for an array
 end
 
 #--------------- Helper Method ---------------
