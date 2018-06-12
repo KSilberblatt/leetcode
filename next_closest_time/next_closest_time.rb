@@ -55,7 +55,7 @@ def next_closest_time(time_string)
       return next_time
     end
   end
-  next_time
+  next_time 
 end
 
 p next_closest_time("11:59")
