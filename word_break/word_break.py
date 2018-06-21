@@ -1,3 +1,4 @@
+#raddicks sort
 ##DP: SUCCESS: breaking up is hard to do
 #8 -1 -1 -1 -1 -1 -1 -1 10 -1 12 -1 16 -1 -1 -1 18 -1 20 -1
 
@@ -49,4 +50,3 @@ def word_break(w, d):
 
 
 word_break("breakingupishardtodo", d)
-    
