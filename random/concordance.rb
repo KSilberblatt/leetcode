@@ -110,4 +110,4 @@ end
 
 example = Concordance.new
 # example.output
-example.pretty_output
+example.output
