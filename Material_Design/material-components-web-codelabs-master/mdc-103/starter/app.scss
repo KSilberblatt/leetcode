@@ -1,3 +1,12 @@
+$mdc-theme-primary: #FEDBD0;
+$mdc-theme-on-primary: #442C2E;
+$mdc-theme-secondary: #FEEAE6;
+$mdc-theme-on-secondary: #442C2E;
+$mdc-theme-surface: #FFFBFA;
+$mdc-theme-on-surface: #442C2E;
+$mdc-theme-background: #FFFFFF;
+$mdc-theme-on-background: #442C2E;
+
 @import "@material/button/mdc-button";
 @import "@material/drawer/mdc-drawer";
 @import "@material/image-list/mdc-image-list";
@@ -15,6 +24,26 @@ body {
 }
 
 // Login page styles
+
+.shrine-login {
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-on-background;
+}
+
+.cancel {
+  @include mdc-button-ink-color(on-primary);
+}
+
+.username,
+.password {
+  &:not(.mdc-text-field--invalid) {
+    @include mdc-text-field-label-color(on-primary);
+  }
+  &.mdc-text-field--focused:not(.mdc-text-field--invalid)  {
+    @include mdc-text-field-label-color(on-primary);
+  }
+  ...
+}
 
 .header {
   text-align: center;
@@ -49,6 +78,24 @@ body {
 
 .home {
   display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+}
+
+.shrine-drawer {
+  @include mdc-drawer-fill-color-accessible(primary);
+  @include mdc-drawer-ink-color(on-primary);
+
+  text-transform: uppercase;
+
+  .mdc-list {
+    margin: 70px 5px auto 5px;
+  }
+
+  .mdc-list-item {
+    @include mdc-list-item-primary-text-ink-color(on-primary);
+
+    border-radius: 6px;
+    justify-content: center;
+  }
 }
 
 .shrine-logo-drawer {
