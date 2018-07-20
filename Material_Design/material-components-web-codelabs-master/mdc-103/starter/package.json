@@ -21,8 +21,10 @@
   "dependencies": {
     "@material/button": "^0.35.0",
     "@material/drawer": "^0.35.0",
+    "@material/elevation": "^0.35.0",
     "@material/image-list": "^0.35.0",
     "@material/list": "^0.35.0",
-    "@material/textfield": "^0.35.0"
+    "@material/textfield": "^0.35.0",
+    "@material/typography": "^0.35.0"
   }
 }
